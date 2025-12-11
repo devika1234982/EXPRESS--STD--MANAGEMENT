@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>STUDENT MANAGEMENT FORM</h1>
+
+    <form id="stdForm">
+        <input type="hidden" id="studentId" />
+        <div><label>Name: <input id="name" required /></label></div>
+        <div><label>Email: <input id="email" required type="email" /></label></div>
+        <div><label>Roll Number: <input id="rollNumber" required /></label></div>
+
+        <div>
+            <label>Maths: <input id="subject1" type="number" required /></label>
+            <label>Physics: <input id="subject2" type="number" required /></label>
+            <label>Chemistry: <input id="subject3" type="number" required /></label>
+        </div>
+        <div>
+
+            <button type="submit" id="saveBtn">Save</button>
+            <button type="button" id="clearBtn">Clear</button>
+        </div>
+    </form>
+
+    <h2>Students List</h2>
+    <table id="studentsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Roll</th>
+                <th>Marks</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
