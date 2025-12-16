@@ -1,3 +1,14 @@
+const userImage = localStorage.getItem("userImage");
+const userIcon = document.getElementById("userIcon");
+
+if (userImage && userIcon) {
+  userIcon.src = userImage;
+} else if (userIcon) {
+  userIcon.src = "default-user.png"; // optional fallback
+}
+
+
+
 const token = localStorage.getItem("token");
 if (!token) window.location.href = "login.html";
 

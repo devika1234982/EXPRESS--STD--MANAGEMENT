@@ -5,6 +5,23 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+#userIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
 body {
   background: #f4f6f9;
   padding: 30px;
